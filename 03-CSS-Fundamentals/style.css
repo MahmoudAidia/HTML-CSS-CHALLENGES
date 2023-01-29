@@ -1,0 +1,282 @@
+* {
+  /* border-top: 10px solid #1098ad; */
+  margin: 0;
+  padding: 0;
+}
+
+/* page section */
+
+body {
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+  border-top: #1098ad 10px solid;
+}
+
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto; /*shorthand*/
+}
+.main-Header {
+  background-color: #f7f7f7;
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  /* height: 120px; */
+}
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 10px solid #1098ad;
+  /* border-bottom: 10px solid #1098ad; */
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding: 50px 0; /*shorthand*/
+  width: 500px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+/* Smaller elements  */
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(25, 184, 215);
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #1098ad;
+}
+
+/* body {
+  background-color: rgb(163, 163, 163);
+} */
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* footer p {
+  font-size: 16px;
+} */
+
+#copyrights {
+  font-size: 16px;
+}
+
+/* article header p {
+  font-style: italic;
+} */
+
+#Author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+.topic {
+  /* border-top: 10px solid #1098ad;
+  border-bottom: 10px solid #1098ad; */
+}
+
+/* .first-li {
+  font-weight: bold;
+} */
+
+li:first-child {
+  /* pseudo class*/
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(2) {
+  text-transform: uppercase;
+}
+
+li:nth-child(even) {
+  /* color: aqua; */
+}
+
+li:nth-child(odd) {
+  /* color: rgb(64, 110, 110); */
+}
+
+/* Misconception:This doesnot work because p is not the first element in the article */
+article p:first-child {
+  color: red;
+}
+
+/* li {
+  border-bottom: 0.8px solid #444;
+} */
+
+/* Styling links */
+/* This hyperlink doesn't have href attribute  */
+/* a {
+  color: #1098ad;
+} */
+/* The link pseudo class will style only the link that has  href attribute */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA  */
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+nav a:link {
+  /* background-color: orangered;
+  display: block; */
+  margin-right: 15px;
+}
+
+.like {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
+.like:hover {
+  background-color: aqua;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 15px;
+}
+
+/* h2::first-letter {
+  font-size: 80px;
+} */
+
+p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: "Top ";
+  background-color: #ffe07e;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+
+/* Resolving conflicts  */
+/* #copyright {
+  color: red;
+}
+
+
+.copyright {
+  color: blue;
+}
+
+
+
+.text {
+  color: yellow;
+}
+
+
+footer p {
+  color: green !important;
+} */
+
+/* ! important to solve some conflicts and shouldnot be used too much */
+/* nav a:link,
+nav p {
+  font-size: 18px;
+} */
